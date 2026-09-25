@@ -2000,7 +2000,7 @@ def admin():
         flash('You do not have permission to access this page.', 'error')
         return redirect(request.referrer or abort(403))
 
-    return render_template('admin.html')
+    return render_template('admin/template.html')
 
 if __name__ == "__main__":
     app.run(port=os.getenv("PORT"))
